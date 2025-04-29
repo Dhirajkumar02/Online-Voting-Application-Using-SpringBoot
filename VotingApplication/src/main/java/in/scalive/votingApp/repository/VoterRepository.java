@@ -1,0 +1,11 @@
+package in.scalive.votingApp.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.scalive.votingApp.entity.Voter;
+
+public interface VoterRepository extends JpaRepository<Voter, Long>  {
+
+	boolean existsByEmail(String email);
+
+}

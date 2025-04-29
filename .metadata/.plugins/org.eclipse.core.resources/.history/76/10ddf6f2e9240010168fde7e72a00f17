@@ -1,0 +1,5 @@
+package in.scalive.votingApp.repository;
+
+public interface VoteRepository {
+
+}

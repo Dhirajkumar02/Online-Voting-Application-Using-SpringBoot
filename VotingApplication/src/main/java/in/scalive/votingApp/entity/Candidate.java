@@ -2,6 +2,8 @@ package in.scalive.votingApp.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,16 +19,17 @@ public class Candidate {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotBlank(message = "Name is required")
 	private String name;
-	
-	@NotBlank(message = "Party name is required")
-	private String partyName;
-	
-	private int voteCount=0;
-	
+
+	@NotBlank(message = "Party is required")
+	private String party;
+
+	private int voteCount = 0;
+
 	@OneToMany(mappedBy = "candidate", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Vote> vote;
 
 }
