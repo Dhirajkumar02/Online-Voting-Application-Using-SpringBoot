@@ -1,5 +1,0 @@
-package in.scalive.votingApp.controller;
-
-public class CandidateController {
-
-}

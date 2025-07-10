@@ -39,7 +39,7 @@ public class VoterService {
 	public Voter getVoterById(Long id) {
 		Voter voter = voterRepository.findById(id).orElse(null);
 		if (voter == null) {
-			throw new ResourceNotFoundException("Voter with id:" + id + " not found");
+			throw new ResourceNotFoundException("Voter with id: " + id + " is not found");
 		}
 		return voter;
 	}
@@ -47,7 +47,7 @@ public class VoterService {
 	public Voter updateVoter(Long id, Voter updatedVoter) {
 		Voter voter = voterRepository.findById(id).orElse(null);
 		if (voter == null) {
-			throw new ResourceNotFoundException("Voter with id:" + id + " not found");
+			throw new ResourceNotFoundException("Voter with id: " + id + " is not found");
 		}
 		if (updatedVoter.getName() != null) {
 			voter.setName(updatedVoter.getName());

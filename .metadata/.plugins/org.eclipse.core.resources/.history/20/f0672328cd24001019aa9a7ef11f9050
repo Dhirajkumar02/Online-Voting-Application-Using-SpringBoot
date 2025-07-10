@@ -1,5 +1,0 @@
-package in.scalive.votingApp.entity;
-
-public class ElectionResult {
-
-}
