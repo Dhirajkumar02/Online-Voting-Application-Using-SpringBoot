@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VotingApplication<VotingApplication>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "in.scalive.votingApp.VotingApplication",
+            "projectName": "VotingApplication",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
