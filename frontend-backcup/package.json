@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "live-server --port=5500",
+    "backend": "cd ../VotingApplication && mvn spring-boot:run",
+    "dev": "concurrently \"npm run backend\" \"npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.0"
+  }
+}
