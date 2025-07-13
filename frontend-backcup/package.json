@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "frontend-backcup",
   "version": "1.0.0",
   "scripts": {
     "start": "live-server --port=5500",
